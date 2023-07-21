@@ -15,4 +15,4 @@ RUN ./mvnw spring-javaformat:apply -DskipTests package
 EXPOSE 8080
 
 # Command to run the application when the container starts
-CMD ["java", "-jar", "target/*.jar"]
+CMD ["./mvnw", "spring-boot:run"]
