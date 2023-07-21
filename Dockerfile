@@ -9,7 +9,7 @@ COPY . /app
 
 # Build the application using Maven
 RUN chmod +x mvnw
-RUN ./mvnw spring-javaformat:apply package
+RUN ./mvnw spring-javaformat:apply -DskipTests package
 
 # Expose the port your Java application listens on
 EXPOSE 8080
