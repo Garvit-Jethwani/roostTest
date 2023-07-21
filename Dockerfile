@@ -8,6 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Build the application using Maven
+RUN chmod +x mvnw
 RUN ./mvnw package
 
 # Expose the port your Java application listens on
